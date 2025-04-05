@@ -18,7 +18,7 @@ class PredictionRequest(BaseModel):
 
 @app.get("/")
 def home():
-    return {"message": "LG Pricing Optimization API is live"}
+    return " Maryam's LG Pricing Optimization API is live"
 
 @app.post("/predict")
 def predict(req: PredictionRequest):
