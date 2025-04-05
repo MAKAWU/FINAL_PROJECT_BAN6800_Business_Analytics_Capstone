@@ -1,10 +1,7 @@
 services:
   - type: web
-    name: lg-pricing-app
+    name: lg-pricing-api
     env: python
     plan: free
     buildCommand: pip install -r requirements.txt
-    startCommand: streamlit run app.py --server.port=10000
-    envVars:
-      - key: PORT
-        value: 10000
+    startCommand: gunicorn app:app -k uvicorn.workers.UvicornWorker --bind 0.0.0.0:$PORT

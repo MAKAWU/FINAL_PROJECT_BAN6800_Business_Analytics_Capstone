@@ -1,6 +1,6 @@
-streamlit
+fastapi
+uvicorn
+gunicorn
 pandas
-scikit-learn
 joblib
-matplotlib
-seaborn
+scikit-learn
