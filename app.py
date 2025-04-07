@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 #Title
-st.title("📈 LG Pricing Optimization Model")
+st.title("📈 Maryam's LG Pricing Optimization Model")
 st.markdown("Predict purchased quantity based on price, product type, and competitor pricing.")
 
 #Load model
